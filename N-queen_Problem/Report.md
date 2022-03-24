@@ -65,6 +65,7 @@ While (there are untried configuration)
 
     Bước 4: Nếu tất cả các cột trên cùng một hàng đều không thỏa thì trả về False và thực hiện Backtracking.
 
+    
 
 
      
