@@ -1,12 +1,14 @@
 # N-queen Problem
 ## __Nêu vấn đề:__
 
-    N-queen là bài toán tìm cách đặt N quân hậu trên một bàn cờ có kích thước N x N sao cho không có 2 quân hậu nào có thể tấn công được nhau.
-
+```
+   N-queen là bài toán tìm cách đặt N quân hậu trên một bàn cờ có kích thước N x N sao cho không có 2 quân hậu nào có thể 
+   tấn công được nhau.
+```
 VD: với __N = 4__, ta sẽ có kết quả như sau:
 <p align="center">
   <a title="4-queen" style="border: none;">
-    <img src="https://media.geeksforgeeks.org/wp-content/uploads/N_Queen_Problem.jpg" alt="Trường Đại học Công nghệ Thông tin | University of Information Technology">
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/N_Queen_Problem.jpg" height="80%" width="60%">
   </a>
 </p>
 
@@ -16,12 +18,10 @@ __Output:__ Một ma trận nhị phân, với __1__ là vị trí của quân h
 
 VD: Dưới đây là __output__ với __N = 4__.
 
-$$\begin{array}{ccc}
-0 & 1 & 0 & 0\\
-0 & 0 & 0 & 1\\
-1 & 0 & 0 & 0\\
-0 & 0 & 1 & 0
-\end{array}$$
+    0  1  0  0
+    0  0  0  1
+    1  0  0  0
+    0  0  1  0
 
 ## __Hướng giải quyết:__
 Dễ dàng thấy được, với __N = 1__, thì vấn đề khá đơn giản, nếu __N = 2__ hoặc __N = 3__ thì sẽ không tồn tại giải pháp thích hợp cho bài toán (vô nghiệm), nên ta sẽ minh họa với __N = 4__.
@@ -32,7 +32,7 @@ Dễ dàng thấy được, với __N = 1__, thì vấn đề khá đơn giản,
 ```
 While (there are untried configuration)
 {
-    generate the next configuration
+   generate the next configuration
    if queens don't attack in this configuration then
    {
       print this configuration;
